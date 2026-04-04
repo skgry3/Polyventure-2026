@@ -118,6 +118,7 @@ main>.companyPage {
 
 main>.companyPage>.companyContent {
     display: flex;
+    flex-direction: row;
 
     width: 90%;
 
@@ -129,39 +130,50 @@ main>.companyPage>.companyContent {
     margin: 1vh 1vw;
 }
 
-main>.companyPage>.left-img {
-    flex-direction: row;
-
-}
-
 main>.companyPage>.right-img {
     flex-direction: row-reverse;
 }
 
-main>.companyPage>.companyContent>.left-side-img {
+main>.companyPage>.left-img {
+    flex-direction: row;
+}
+
+main>.companyPage>.companyContent>.img-container {
     flex: 1;
 
     background: blanchedalmond;
 }
 
-main>.companyPage>.companyContent>img {
+main>.companyPage>.companyContent>.img-comtainer img {
     flex: 1;
-
+    object-fit: cover;
     background: blanchedalmond;
 }
+
 
 main>.companyPage>.companyContent>article {
-    flex: 4;
+    flex: 2;
 
     margin: 1vh 1vw;
     background: yellowgreen;
 }
 
+main>.companyPage>.companyContent>article h2 {
+    font-size: 5vw;
+}
+
+main>.companyPage>.companyContent>article p {
+    font-size: 1vw;
+
+}
+
+img {
+    max-width: 100%;
+}
+
 .large-img {
     width: 100%;
     height: auto;
-    margin-top: 1%;
-    margin-bottom: 1%;
 }
 
 .back-img {
