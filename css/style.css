@@ -6,6 +6,7 @@
     font-family: Playfair_font;
     src: url("../font/PlayfairDisplaySC-Black.woff");
 }
+
 /* for basic normal texts */
 @font-face {
     font-family: LexendExa_font;
@@ -28,14 +29,15 @@ img {
 }
 
 a {
-  text-decoration: none;
-  color:#f5efeb;
-  font-family: LexendExa_Font;
+    text-decoration: none;
+    color: #f5efeb;
+    font-family: LexendExa_Font;
 }
 
-h1, h2{
+h1,
+h2 {
     font-family: Playfair_font;
-    color:#f5efeb;
+    color: #f5efeb;
 }
 
 
@@ -50,19 +52,19 @@ header {
     padding: 1vh 1vw;
 }
 
-header>div:nth-of-type(1)>a{
+header>div:nth-of-type(1)>a {
     display: flex;
     align-items: center;
 }
 
-header>div:nth-last-of-type(1){
+header>div:nth-last-of-type(1) {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 2vw;
     align-items: center;
 }
 
-header img{
+header img {
     height: 6.5vh;
 }
 
@@ -74,50 +76,52 @@ footer {
     background: #2f4156;
     display: grid;
     grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(2,auto);
+    grid-template-rows: repeat(2, auto);
     padding: 0.5vh 1vw;
 }
 
-footer *{
+footer * {
     text-align: left;
-    color:#f5efeb;
+    color: #f5efeb;
     font-family: LexendExa_Font;
     padding: 0.5vh 0vw;
 }
 
-footer img{
-    height:15vh;
+footer img {
+    height: 15vh;
 }
 
-footer h6{
+footer h6 {
     text-align: center;
     font-family: Playfair_Font;
 }
 
-footer h4>u{
+footer h4>u {
     font-family: Playfair_Font;
 }
 
-footer p, footer a{
+footer p,
+footer a {
     font-size: 0.75vw;
     padding: 0.5vh 0vw;
 }
-footer>a{
+
+footer>a {
     grid-column: 1;
     grid-row: 1;
-    justify-content : center;
+    justify-content: center;
     display: flex;
     place-items: end;
     padding: 4vh 1vw;
 }
 
 
-footer div{
-    padding:1vw 1vh;
+footer div {
+    padding: 1vw 1vh;
     grid-row: 1 / span 2;
 }
 
-footer nav{
+footer nav {
     display: flex;
     flex-direction: column;
     row-gap: 1vh;
@@ -134,25 +138,25 @@ footer nav{
     background-repeat: no-repeat;
     background-size: auto 100vh;
     min-height: 90vh;
-    
+
     grid-template-rows: 3fr 1fr;
     grid-template-columns: 2fr 1fr;
     padding: 5vh 3.5vw;
 }
 
-.mainPage h1{
-    color:#2f4156;
+.mainPage h1 {
+    color: #2f4156;
     font-size: 8.5vw;
 }
 
-.mainPageButtons{
+.mainPageButtons {
     grid-row: 2;
     grid-column: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
-    column-gap:2vw;
+    column-gap: 2vw;
 }
 
 .mainPageButtons>a {
@@ -162,13 +166,13 @@ footer nav{
     text-decoration: none;
     font-size: 3vh;
     min-width: 27vw;
-    justify-content: center; 
+    justify-content: center;
     align-content: center;
     padding: 2vh 1vw;
     border-radius: 16px;
 }
 
-.mainPageButtons>a:nth-last-of-type(1){
+.mainPageButtons>a:nth-last-of-type(1) {
     grid-column: 1/span 2;
     justify-self: center;
 }
@@ -176,7 +180,9 @@ footer nav{
 /*=======================
         company pg
 =======================*/
-.gamingPg, .ecoPg, .techPg{
+.gamingPg,
+.ecoPg,
+.techPg {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -186,23 +192,27 @@ footer nav{
 
 .companyContent {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border-bottom: 3px solid #f5efeb;
     padding: 3vh 1vw;
 }
 
-.right-img {
-    flex-direction: row-reverse;
+.bottom-img {
+    flex-direction: column-reverse;
 }
 
-.left-img {
-    flex-direction: row;
+.top-img {
+    flex-direction: column;
 }
 
 .img-container {
     flex: 1;
     background: transparent;
+
+    display: flex;
+    flex-direction: row;
 }
+
 .img-comtainer img {
     flex: 1;
     object-fit: cover;
@@ -217,10 +227,38 @@ footer nav{
 
 .companyContent>article h2 {
     font-size: 5vw;
+    justify-self: center;
 }
 
-.companyContent>article p {
+.companyContent>article h3 {
+    font-size: 2vw;
+    font-family: LexendExa_font;
+
+    text-decoration: underline;
+    padding: 2vh 0vw
+}
+
+.companyContent>article>ol>li {
+    font-size: 1.5vw;
+    font-family: LexendExa_font;
+
+    list-style-position: inside;
+
+    padding: 1vh 0vh
+}
+
+.companyContent>article>ol>ul>li{
     font-size: 1vw;
+    font-family: LexendExa_font;
+
+    list-style-position: inside;
+    padding: 0.5vh 0vh
+}
+
+.companyContent>article>ol>p {
+    font-size: 1vw;
+    font-family: LexendExa_font;
+
 }
 
 .large-img {
@@ -233,6 +271,6 @@ footer nav{
     margin: 1vh 1vw;
 }
 
-.companyContent *{
-    color:#f5efeb;
+.companyContent * {
+    color: #f5efeb;
 }
