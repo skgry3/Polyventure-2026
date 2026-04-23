@@ -271,7 +271,7 @@ footer nav {
     padding: 0.5vh 0vh
 }
 
-.companyContent>article p {
+.companyContent>article>p {
     font-size: 1vw;
     font-family: LexendExa_font;
 
