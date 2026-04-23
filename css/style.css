@@ -127,6 +127,22 @@ footer nav {
     row-gap: 1vh;
 }
 
+.scrollable-Horizontal {
+    width: 100%;
+    overflow: hidden;
+}
+
+.scrolling {
+    display: flex;
+    width: max-content;
+}
+
+.scrollable-Horizontal img {
+    height: 30vh;
+    display: block;
+    flex-shrink: 0;
+}
+
 /*=======================
         main pg
 =======================*/
@@ -247,7 +263,7 @@ footer nav {
     padding: 1vh 0vh
 }
 
-.companyContent>article>ol>ul>li{
+.companyContent>article>ol>ul>li {
     font-size: 1vw;
     font-family: LexendExa_font;
 
