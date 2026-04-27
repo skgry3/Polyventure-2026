@@ -34,3 +34,27 @@ window.addEventListener('load', () => {
     tracks.forEach(track => ScrollTrack(track));
 
 });
+
+/*=======================
+        lightbox
+=======================*/
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeLightboxBtn = document.querySelector('.lightboxCloseBtn');
+const allImages = document.querySelectorAll('img');
+
+allImages.forEach(img => {
+    img.addEventListener('click', () => {
+        lightbox.classList.add('active');
+        lightboxImg.src = img.src;
+    });
+});
+
+closeLightboxBtn.addEventListener('click', (e) => {
+    if (e.target !== lightboxImg) {
+        lightbox.classList.remove('active');
+    }
+});
+lightbox.addEventListener('animationend', () => {
+    lightbox.classList.remove('active');
+});
