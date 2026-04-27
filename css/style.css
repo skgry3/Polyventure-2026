@@ -256,9 +256,12 @@ animation-fill-mode: forwards;}
 
 .companyContent>article {
     flex: 2;
-    padding: 1vh 1vw;
+    padding: 2vh 2vw;
     border: 3px solid #c8d9e6;
+    margin-left: 5%;
+    margin-right: 5%;
 }
+
 
 .companyContent>article h2 {
     font-size: 5vw;
